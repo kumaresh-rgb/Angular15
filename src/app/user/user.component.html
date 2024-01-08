@@ -9,7 +9,7 @@
               <!-- Position Column -->
               <ng-container matColumnDef="username">
                 <th mat-header-cell *matHeaderCellDef> Username </th>
-                <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                <td mat-cell (click)="updateuser(element.id)" *matCellDef="let element"> <span class="hyperlink">{{element.id}}</span>   </td>
               </ng-container>
           
               <!-- Name Column -->

@@ -12,7 +12,7 @@ import { AuthService } from '../service/auth.service';
 export class LoginComponent {
   constructor(private builder: FormBuilder, private toastr: ToastrService, private service: AuthService,
     private router: Router) {
-      sessionStorage.clear();
+     
 
   }
   result: any;
@@ -31,6 +31,7 @@ export class LoginComponent {
             sessionStorage.setItem('username',this.result.id);
             sessionStorage.setItem('role',this.result.role);
             this.router.navigate(['']);
+            console.log(this.loginform.value)
           } else {
             this.toastr.error('Please contact Admin', 'InActive User');
           }
