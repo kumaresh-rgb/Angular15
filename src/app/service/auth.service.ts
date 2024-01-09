@@ -8,14 +8,19 @@ import { ToastrService } from 'ngx-toastr'
 })
 export class AuthService {
   toastr: any;
+<<<<<<< HEAD
   
+=======
+  some:any;
+  users:any
+>>>>>>> f0b25acb0f730dbf4d3deaa15f863ffe587e9c59
 
   constructor(private http:HttpClient) { 
 
   }
   apiurl='http://localhost:3000/user';
 
-  RegisterUser(inputdata:any){
+  RegisterUser(inputdata:any ){
     return this.http.post(this.apiurl,inputdata)
   }
   GetUserbyCode(id:any){
@@ -47,5 +52,26 @@ export class AuthService {
     return this.http.get('http://localhost:3000/roleaccess?role=' + role + '&menu=' + menu);
   }
 
+<<<<<<< HEAD
   
+=======
+//     UsernameIsExists() {
+//   if (
+//     this.Getall().subscribe((response: any) => {
+//       const userExists = response.some((user: { username: string; }) => {user.username === this.RegisterUser.name});
+      
+//       if (userExists) {
+//         this.toastr.warning("Username Already Exists");
+//       } else {
+//         // Proceed with your logic here if the username doesn't exist
+//       }
+//     })
+//    ) else  {
+//     this.toastr.warning("Unknown Error");
+//   }
+// }
+
+
+
+>>>>>>> f0b25acb0f730dbf4d3deaa15f863ffe587e9c59
 }

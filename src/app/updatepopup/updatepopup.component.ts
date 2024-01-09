@@ -19,6 +19,7 @@ export class UpdatepopupComponent implements OnInit {
     });
     
   }
+  
   ngOnInit(): void {
     if (this.data.usercode != '' && this.data.usercode != null) {
       this.loaduserdata(this.data.usercode);

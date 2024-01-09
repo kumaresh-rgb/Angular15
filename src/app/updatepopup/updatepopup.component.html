@@ -2,6 +2,7 @@
 <form [formGroup]="registerform" (ngSubmit)="UpdateUser()">
     <div mat-dialog-content>
         <mat-form-field class="example-full-width">
+<<<<<<< HEAD
             <mat-label>First Name</mat-label>
             <input matInput formControlName="name" >
           </mat-form-field>
@@ -10,10 +11,13 @@
             <input matInput formControlName="lastname" >
           </mat-form-field>
           <mat-form-field class="example-full-width">
+=======
+>>>>>>> f0b25acb0f730dbf4d3deaa15f863ffe587e9c59
             <mat-label>Username</mat-label>
             <input matInput formControlName="id" >
           </mat-form-field>
           <mat-form-field class="example-full-width">
+<<<<<<< HEAD
             <mat-label>DOB</mat-label>
             <input matInput formControlName="dob" >
           </mat-form-field>
@@ -33,6 +37,23 @@
             <mat-radio-button value="male">Male</mat-radio-button>
             <mat-radio-button value="female">Female</mat-radio-button>
           </mat-radio-group>
+=======
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput formControlName="password" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" >
+            </mat-form-field>
+            <mat-radio-group formControlName="gender" aria-label="Select an option">
+              <mat-radio-button value="male">Male</mat-radio-button>
+              <mat-radio-button value="female">Female</mat-radio-button>
+            </mat-radio-group>
+>>>>>>> f0b25acb0f730dbf4d3deaa15f863ffe587e9c59
         <mat-form-field>
             <mat-label>Role</mat-label>
             <mat-select formControlName="role">

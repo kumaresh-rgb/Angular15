@@ -56,7 +56,7 @@ export class CustomerComponent {
 
     });
   }
-  displayedColumns: string[] = ['code', 'name', 'creditlimit', 'action'];
+  displayedColumns: string[] = ['Username', 'name', 'creditlimit', 'action'];
 
   updatecustomer(code: any) {
 
